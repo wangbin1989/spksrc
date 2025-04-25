@@ -1,0 +1,11 @@
+{
+    ".url": {
+        "com.synocommunity.packages.zashboard": {
+            "type": "url",
+            "icon": "images/zashboard-{0}.png",
+            "title": "zashboard",
+            "url": "/zashboard",
+            "allUsers": true
+        }
+    }
+}

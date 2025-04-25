@@ -1,0 +1,32 @@
+{
+	"webservice": {
+		"services": [
+			{
+				"service": "zashboard",
+				"display_name": "zashboard",
+				"icon": "app/images/zashboard-{0}.png",
+				"type": "static",
+				"root": "zashboard"
+			}
+		],
+		"portals": [
+			{
+				"service": "zashboard",
+				"name": "zashboard",
+				"display_name":"zashboard",
+				"type": "alias",
+				"alias": "zashboard",
+				"app": "com.synocommunity.packages.zashboard"
+			}
+		],
+		"pkg_dir_prepare": [
+			{
+				"source": "/var/packages/zashboard/target/web",
+				"target": "zashboard",
+				"mode": "0755",
+				"group": "http",
+				"user": "sc-zashboard"
+			}
+		]
+	}
+}
